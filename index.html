@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+   
+  </head>
+  <body>
+    <section class="body-section" >
+    <aside class="container"id="sidebar">
+      <div class="logo" >
+        <img src="./images/Group 1.png" alt="logo" />
+        <span>
+          <button class="btn-min" onclick="hideMenu()">
+            <span class="material-symbols-outlined">
+               close
+            </span>
+          </button></span >
+      </div>
+      <nav class="navbar">
+        <ul class="nav">
+          <li class="nav-itam" id="active">
+            <a class="nav-link"
+              ><span class="material-symbols-outlined"> dashboard </span
+              >Dashboard</a
+            >
+          </li>
+          <li class="nav-itam">
+            <a class="nav-link"
+              ><span class="material-symbols-outlined"> request_page</span
+              >Invoices</a
+            >
+          </li>
+          <li class="nav-itam">
+            <a class="nav-link">
+              <span class="material-symbols-outlined"> description</span>
+              Proposals</a
+            >
+          </li>
+          <li class="nav-itam">
+            <a class="nav-link">
+              <span class="material-symbols-outlined">settings_b_roll</span>
+              Services</a
+            >
+          </li>
+          <li class="nav-itam">
+            <a class="nav-link">
+              <span class="material-symbols-outlined">receipt_long</span>
+              Transactions</a
+            >
+          </li>
+          <li class="nav-itam">
+            <a class="nav-link">
+              <span class="material-symbols-outlined">folder</span>
+              Customers</a
+            >
+          </li>
+          <span>
+            <hr>
+          </span>
+          <li class="nav-itam">
+            <a class="nav-link">
+              <span class="material-symbols-outlined">settings</span>
+              Settings</a
+            >
+          </li>
+          <li class="nav-itam">
+            <a class="nav-link">
+              <span class="material-symbols-outlined">logout</span>
+              Log out</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <main>
+      <span>
+        <button class="btn" onclick="showMenu()">
+          <span class="material-symbols-outlined">
+             menu 
+          </span>
+        </button></span >
+     <!--header top-->
+      <section>
+         <div class="main-header">
+          <div class="header-nav">
+            <h4>
+              Hi, Welcome back <span style="color: #1cd2ad">Robert!</span>
+            </h4>
+            <div class="header-left">
+              <span class="material-symbols-outlined fa-search">
+                search
+                </span>
+              <input type="text" placeholder="search..." class="search-box" />
+              <div class="icon-box"><span class="material-symbols-outlined" style="color: white;">
+                notifications
+                </span></div>
+              <!-- <button id="menu-bar">
+                <span class="material-symbols-sharp">menu</span>
+              </button> -->
+            </div>
+          </div>
+      </section>
+       <!--top end-->
+
+         <!--header box-->
+         <div class="sale-item">
+          <h4>Finance Overview</h4>
+          <div class="header-box">
+            <div class="child">
+              <div>
+                <h3>$ 2,77,120</h3>
+                <p>Sales</p>
+              </div>
+              <img src="./images/salse.png" class="sale-img" />
+            </div>
+
+            <div class="child">
+              <div>
+                <h3>$ 60,100</h3>
+                <p>Expense</p>
+              </div>
+              <img src="./images/Expense.jpg" class="sale-img" />
+            </div>
+
+            <div class="child">
+              <div>
+                <h3>$ 57,230</h3>
+                <p>Profit</p>
+              </div>
+              <img src="./images/profit.jpg" class="sale-img" />
+            </div>
+
+            <div class="child">
+              <div>
+                <h3>$ 1,60,124</h3>
+                <p>Income</p>
+              </div>
+              <img src="./images/income.avif" class="sale-img" />
+            </div>
+          </div>
+        </div>
+                  <!--header box-->
+      </div>
+      <div class="recent-order">
+        <div class="project">
+        <h1><i>Current Projects</i></h1>
+        <button class="btn-paid">Create</button>
+      </div>
+        <table>
+
+          <thead>
+            <tr >
+              <th>Project Name</th>
+              <th>Customer</th>
+              <th>Sent Deta</th>
+              <th>Amount</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Travel app design</td>
+              <td>Jacob Jones</td>
+              <td>28 Oct 2022</td>
+              <td>$240.90</td>
+              <td><a href="" style="behavior: courser;"><button class="btn-sent">SENT</button></a></td>
+            </tr>
+
+            <tr>
+              <td>UX-Research for Event<br>management-app</td>
+              <td>Jacob Jones</td>
+              <td>28 Oct 2022</td>
+              <td>$240.90</td>
+              <td><button class="btn-sent">SENT</button></td>
+            </tr>
+
+            <tr>
+              <td>Redesign-Food<br>delivery app</td>
+              <td>Wade Warren</td>
+              <td>28 Oct 2022</td>
+              <td>$120.00</td>
+              <td><button class="btn-draft">DRAFT</button></td>
+            </tr>
+
+            <tr>
+              <td>Web App-Online<br>Learning</td>
+              <td>Cameron Williamson</td>
+              <td>17 Oct 2022</td>
+              <td>$240.90</td>
+              <td><button class="btn-paid">PAID</button></td>
+            </tr>
+
+            <tr>
+              <td>Railway web casestudy</td>
+              <td>Robert Fox</td>
+              <td>15 Oct 2022</td>
+              <td>$153.0</td>
+              <td><button class="btn-sent">SENT</button></td>
+            </tr>
+          </tbody>
+
+        </table>
+      </div>
+
+
+      <!-- footer box start -->
+      <div class="footer-main">
+      <div class="footer-box">
+        <div class="head">
+            <header>
+                <h4>Events</h4>
+            </header>
+        </div>
+
+        <div class="main">
+            <div class="firstChild">
+                <div class="mainImg">
+                    <div></div>
+                </div>
+                <div class="mainText">
+                    <h3>Wade Warren</h3>
+                    <p>Birthday Today</p>
+                </div>
+                <div class="mainButton">
+                    <button>Wish</button>
+                </div>
+            </div>
+            
+                <div class="firstChild">
+                    <div class="mainImg">
+                        <div></div>
+                    </div>
+                    <div class="mainText">
+                        <h3>Wade Warren</h3>
+                        <p>Birthday Today</p>
+                    </div>
+                    <div class="mainButton">
+                        <button>Congratulations</button>
+                    </div>
+                </div>
+
+
+                    <div class="firstChild">
+                        <div class="mainImg">
+                            <div></div>
+                        </div>
+                        <div class="mainText">
+                            <h3>Wade Warren</h3>
+                            <p>Birthday Today</p>
+                        </div>
+                        <div class="mainButton">
+                            <button>Wish</button>
+                        </div>
+                    </div>
+
+                    <div class="firstChild">
+                        <div class="mainImg">
+                            <div></div>
+                        </div>
+                        <div class="mainText">
+                            <h3>Wade Warren</h3>
+                            <p>Birthday Today</p>
+                        </div>
+                        <div class="mainButton">
+                            <button>Wish</button>
+                        </div>
+                    </div>
+                    
+                        <div class="firstChild">
+                            <div class="mainImg">
+                                <div></div>
+                            </div>
+                            <div class="mainText">
+                                <h3>Wade Warren</h3>
+                                <p>Birthday Today</p>
+                            </div>
+                            <div class="mainButton">
+                                <button>Wish</button>
+                            </div>
+                        </div>
+        
+        
+                            <div class="firstChild">
+                                <div class="mainImg">
+                                    <div></div>
+                                </div>
+                                <div class="mainText">
+                                    <h3>Wade Warren</h3>
+                                    <p>Birthday Today</p>
+                                </div>
+                                <div class="mainButton">
+                                    <button>Wish</button>
+                                </div>
+                            </div>
+        </div>
+    </div>
+  </div>
+
+     <!-- footer box end -->
+    </main>
+  </section>
+    <script src="index.js">
+    </script>
+
+    <script>
+      var navLinks = document.getElementById("sidebar");
+    function showMenu(){
+    navLinks.style.left = "0";
+}
+function hideMenu(){
+    navLinks.style.left = "-280px";
+ }
+   
+    </script>
+  </body>
+</html>
