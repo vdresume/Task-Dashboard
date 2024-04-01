@@ -135,7 +135,19 @@ main {
   font-size: 15px;
   padding: 10px;
 }
-
+.icon-box{
+  color: white;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  border: 2px solid white;
+  text-align: center;
+  cursor: pointer;
+}
+.icon-box >.material-symbols-outlined{
+  font-size: 1rem;
+  padding: 0;
+}
 .sale-item {
   margin-top: -1.3rem;
   margin-left: 1rem;
@@ -474,6 +486,7 @@ main table tbody td {
     top: 0;
     background-color: whitesmoke;
     font-size: smaller;
+    transition: 2s ease-in;
     z-index: 9999999;
   }
   /* .btn{
@@ -573,6 +586,7 @@ display: block;
     top: 0;
     background-color: whitesmoke;
     font-size: smaller;
+    transition: 2s ease-in;
     z-index: 9999999;
   }
   .header-nav {
